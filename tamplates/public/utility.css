@@ -1,0 +1,78 @@
+@media (max-width: 767px) {
+  .cardsMain-conatainer {
+    height: 850px;
+  }
+  .cardsSub-conatainer {
+    flex-direction: column;
+    height: 800px;
+    position: relative;
+/*     border: 1px solid black; */
+  }
+  .cards {
+    top: -10px;
+    margin-top: 4vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .hr {
+    height: 2px;
+  }
+  .service-box span h2 {
+    font-size: 1rem;
+  }
+  .service-box span h3 {
+    font-size: 0.7rem;
+  }
+}
+@media (max-width: 767px) {
+  /* HEADER */
+  header {
+    min-height: 60px;
+  }
+  .logo a {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+  }
+  /* HERO SECTION */
+  .parallax {
+    height: 400px;
+  }
+  .text {
+    flex-wrap: wrap;
+    text-align: center;
+    width: 300px;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  /* SECTION SECTION */
+  .second-section {
+    padding: 30px 20px;
+  }
+  .second-section h2 {
+    font-size: 1.5rem;
+  }
+  .second-section p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 767px) {
+  /* Our Services */
+  .choose-title {
+    font-size: 2rem;
+    padding-left: 2rem;
+  }
+  .chooseUs-title h2 {
+    font-size: 2rem;
+  }
+  .chooseUs-box {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #fff;
+  height: auto;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+/* HEADER */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  min-height: 80px;
+}
+header .logo a {
+  text-decoration: none;
+  color: #003329;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0vw 4vw;
+}
+
+/* HERO */
+.parallax {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+.text {
+  width: 70vw;
+  text-align: center;
+  position: absolute;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px black;
+}
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+/* SECTION SECTION */
+.second-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  background-color: #003329;
+  position: relative;
+  padding: 100px;
+}
+.second-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.second-section p {
+  color: white;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* ==== SERVICES ====== */
+.services {
+  display: flex;
+  align-items: start;
+  background-color: #003329;
+  width: 100vw;
+  height: 500px;
+  justify-content: space-between;
+  padding: 0vh 5vh;
+  padding-bottom: 3rem;
+  padding-top: 5rem;
+}
+.services .service-des {
+  width: 200px;
+  padding-left: 1rem;
+}
+.service-des h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+}
+.service-des p {
+  color: white;
+  font-size: 12px;
+}
+.services .service-boxes {
+  width: 400px;
+}
+.hr {
+  background-color: #F5F5DC;
+  height: 3px;
+  width: 300px;
+  border: none;
+}
+.service-box {
+  width: 250px;
+}
+.service-box span {
+  width: 100px;
+  color: white;
+}
+.service-box span h2 {
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: white;
+}
+.service-box span h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+}
+#service-icon {
+  width: 20px;
+  height: 20px;
+  color: white;
+  font-size: 10px;
+  background-color: #8669E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  transition: all 1s ease;
+}
+#service-icon:hover {
+  transform: scale(1.5);
+}
+
+/* ===== LATEST PRODUCTS =======/ */
+.cardsMain-conatainer {
+  height: 400px;
+  background: linear-gradient(80deg, rgba(181,19,255,1) 0%, rgba(0,187,255,1) 100%);
+  /* position: relative; */
+}
+.cardsSub-conatainer {
+  height: 300px;
+  position: relative;
+}
+.cards {
+  width: 200px;
+  height: 170px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 0px 10px;
+  transition: transform 0.8s ease-in-out, height 0.8s ease-in-out;
+  position: relative;
+}
+.cards:hover {
+  height: 240px;
+}
+.cardImgBox {
+  width: 180px;
+  height: 110px;
+  background-color: black;
+  border-radius: 10px;
+  position: absolute;
+  transition: top 0.8s ease-in-out, transform 0.8s ease-in-out;
+  top: 10px;
+  overflow: hidden;
+  transform: scale(1);
+}
+.cards:hover .cardImgBox {
+  top: -30px;
+  transform: scale(0.9);
+  box-shadow: 1px 1px 5px gray;
+}
+.cards-des {
+  position: absolute;
+  top: 120px;
+  width: 180px;
+  height: 30px;
+  overflow: hidden;
+  text-align: center;
+  transition: top 0.8s ease-in-out, height 0.8s ease-in-out;
+}
+.cards:hover .cards-des {
+  top: 75px;
+  height: 200px;
+}
+.cards .cards-des .card-title {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.cards .cards-des p {
+  font-size: 12px;
+}
+.cards .cards-des a {
+  font-size: 12px;
+}
+
+
+/* ======== CHOOSE US  ======= */
+.choose-title {
+  font-weight: 700;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+.chooseUs-box .choose-us {
+  margin: 1.5vh;
+  border: 1px solid transparent;
+}
+.choose-us h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.choose-us p {
+  color: gray;
+}
+.choose-us img {
+  width: 70px;
+  height: auto;
+}
+
+/* ==== FOOTER ===== */
+footer a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: green;
+}
