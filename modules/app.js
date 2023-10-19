@@ -6,7 +6,7 @@ const path = require("path");
 const hbs = require("hbs");
 
 const port = 4512;
-const hostname = "127.0.0.1";
+const hostname = "0.0.0.0";
 
 const server = http.createServer(app);
 server.listen(port, hostname, ()=>{
